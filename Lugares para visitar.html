@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+
+    <!--SCRIPT PARA EL FONDO-->
+    <script>
+        document.body.addEventListener("pointermove", (e)=>{
+        const { currentTarget: el, clientX: x, clientY: y } = e;
+        const { top: t, left: l, width: w, height: h } = el.getBoundingClientRect();
+        el.style.setProperty('--posX',  x-l-w/2);
+        el.style.setProperty('--posY',  y-t-h/2);
+      })
+    </script>
+    <!--FIN DEL SCRIPT-->
+
+    <font size=7 ><h1 class="outlined-text" align="center">Lugares Para Visitar</h2></font>
+        <center> <font face = "arial"><h3 class="outlined">¡Mil Fotos Por Tomar!</h3></center></body></font>
+        <br><hr>
+    <div class="kodfun-galeri">
+        <div style="background-image: url(https://oasisblog.nyc3.cdn.digitaloceanspaces.com/2021/01/playa-delfines-panoramica.jpg);"></div>
+        <div style="background-image: url(https://media.tacdn.com/media/attractions-splice-spp-674x446/06/e5/0a/8c.jpg);"></div>
+        <div style="background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/10/5d/70/la-isla-paradise-experience.jpg?w=1200&h=-1&s=1);"></div>
+        <div style="background-image: url(https://www.puertomayacancun.com/wp-content/uploads/2023/04/jungle-tour-speed-boat-cancun-4.webp);"></div>
+        <div style="background-image: url(https://images.venturapark.com/img/2023/09/que-hacer-en-cancun-de-dia-1.jpg);"></div>
+        <div style="background-image: url(https://a.travel-assets.com/findyours-php/viewfinder/images/res70/331000/331656-Las-Perlas-Beach.jpg);"></div>
+        <div style="background-image: url(https://www.xcaret.com/assets/xcaret/sliders/es/ficha/xoximilco/mobile/sliders-ficha-xoxi02.webp);"></div>
+    </div>
+    <!--Lugares para visitar.html-->
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Cuales son sus tradiciones?</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+
+    <!--SCRIPT PARA EL FONDO-->
+    <script>
+        document.body.addEventListener("pointermove", (e)=>{
+        const { currentTarget: el, clientX: x, clientY: y } = e;
+        const { top: t, left: l, width: w, height: h } = el.getBoundingClientRect();
+        el.style.setProperty('--posX',  x-l-w/2);
+        el.style.setProperty('--posY',  y-t-h/2);
+      })
+    </script>
+    <!--FIN DEL SCRIPT-->
+
+    <font size=7 ><h1 class="outlined-text" align="center">Tradiciones De Cancún</h2></font>
+    <center> <font face = "arial"><h3 class="outlined">¡Un Millón De Cosas Por Aprender!</h3></center></body></font>
+    <br><hr>
+
+    <!--INFORMACION-->
+    <center>
+          <div class="informacion">
+            <!--PARRAFO 1-->
+            <font size="4"><p><h4 class="informacion">EVENTOS Y FIESTAS TRADICIONALES DE CANCÚN</h4><br>Aunque Cancún sea un destino donde las playas sean el principal atractivo, su tradición como país se mantiene y se respira en el ambiente. No solo en su gastronomía, que se mantiene viva en los restaurantes y en los puestos o sus construcciones arquitectónicas que nos recuerdan la existencia de la civilización maya. Las actividades en Cancún que se llevan a cabo durante el año, también incorporan esta temática a las celebraciones. ¡México es un país repleto de historia! </p></font><br><br><br><hr>
+            
+            <!--PARRAFO 2-->
+            <font size="4"><p><h4 class="informacion">ARENA FESTIVAL</h4><br>La primera semana de febrero suele ser la elegida para celebrar cada año el Arena Festival, orientado a lesbianas y a gays. Un encuentro donde se reúnen artistas internacionales de la música dance para hacer bailar durante cinco días a todas las personas asistentes. Se celebra en Playa del Carmen, a poca distancia de Cancún.</p></font><br><br><br><hr>
+            
+            <!--PARRAFO 3-->
+            <font size="4"><p><h4 class="informacion">CARNAVAL DE PLAYA DEL CARMEN</h4><br>Y de nuevo en Playa del Carmen tiene lugar otra celebración destacada. El carnaval es muy valorado en la región del Caribe y también durante cinco días se realizan concursos y presentaciones de baile, se nombran reyes y reinas del carnaval y se muestran todas las fantasías creadas en un desfile que recorre las calles. La población se une a la fiesta y las calles se llenan de carrozas y de gente disfrutando de la música hasta que el cuerpo aguante.</p></font><br><br><br><hr>
+            
+            <!--PARRAFO 4-->
+            <font size="4"><p><h4 class="informacion">SAN VALENTÍN</h4><br>San Valentín no necesita presentación. Se trata de una fecha que se suele utilizar para organizar un sinfín de actividades. Dado que es uno de los destinos favoritos por parejas para celebrar su luna de miel, no faltan los eventos y actividades pensados por y para ese día.</p></font><br><br><br><hr>
+
+            <!--PARRAFO 5-->
+            <font size="4"><p><h4 class="informacion">EQUINOCCIO DE PRIMAVERA EN EL CHICHEN ITZÁ</h4><br>Dos veces al año tiene lugar el equinoccio, una es el 21 de marzo, aproximadamente, y la otra el 21 de septiembre. La duración del día y la noche se igualan y se observa una ilusión óptica sobre la pared lateral de la pirámide, que con forma de serpiente desciende hasta llegar a la cabeza tallada en la base del templo. Cada año miles de turistas y locales acuden hasta allí para verlo porque es algo espectacular. ¡No te lo puedes perder!</p></font><br><br><br><hr>
+            <br><br><br>
+        </div>
+    </center>
+
+    <!--IMAGENES-->
+    <div>
+        <p class="izquierda"><img src="https://localexperiencemexico.com/wp-content/uploads/2022/05/local-experience-carnaval.jpg" alt="Tradiciones 1" class="trad1"></p>
+        <p class="derecha"><img src="https://www.playasmexico.mx/IMG/arton3748.jpg" alt="Tradiciones 2" class="trad2"</p>
+    </div>
+    <!--SusTradiciones.html-->
+</body>
+</html>

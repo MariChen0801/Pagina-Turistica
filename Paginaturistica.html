@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende sobre cancún</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+                <!--SCRIPT DEL FONDO-->
+                <script>
+                    document.body.addEventListener("pointermove", (e)=>{
+                    const { currentTarget: el, clientX: x, clientY: y } = e;
+                    const { top: t, left: l, width: w, height: h } = el.getBoundingClientRect();
+                    el.style.setProperty('--posX',  x-l-w/2);
+                    el.style.setProperty('--posY',  y-t-h/2);
+                  })
+                </script>
+                <!--FIN DEL SCRIPT-->
+    
+                <font size=7 ><h1 class="outlined-text" align="center">Cancún-Guerrero</h2></font>
+                <center> <font face = "arial"><h3 class="outlined">¡Un destino con muchas curiosidades!</h3></center></body></font>
+                <br><br><hr><br><br>
+
+                <!--INFORMACION-->
+                <p align ="center"><font face = "calibri" size =4 style="color: #ffffff;" >Cancún es una ciudad de México ubicada en la península de Yucatán que limita con el mar Caribe y que es conocida por sus playas, los numerosos centros turísticos y la vida nocturna. Se compone de 2 áreas distintas: el área del centro más tradicional y la Zona Hotelera, la franja costera con hoteles altos, clubes nocturnos, tiendas y restaurantes. Cancún también es un destino popular entre estudiantes durante el período de vacaciones universitarias en la primavera.</p><br><br><hr name="linea"><br><br>
+
+                <div class="texto">
+
+                    <!--IMAGEN CON HIPERVINCULO DEL LADO IZQUIERDO  -->
+                    <h2><p class="izquierda">Tradiciones De Cancún<br><a style="color: #100069;" href="SusTradiciones.html"><img src="https://localexperiencemexico.com/wp-content/uploads/2022/05/local-experience-tradiciones.jpg"alt="Tradiciones De Cancún" class="imagen1"></a></p>
+
+                    <!--IMAGEN CON HIPERVINCULO DEL LADO DERECHO-->
+                    <p  class="derecha">Lugares Para Visitar<br><a  style="color: #087b00;" href="Lugares para visitar.html"><img src="https://www.xcaret.com/assets/xcaret/landings/destinos/cancun.webp" alt="Para Visitar" class="imagen2"></p></h2>
+
+                </div>
+                <!--Paginaturistica.html-->
+</body>
+</html>

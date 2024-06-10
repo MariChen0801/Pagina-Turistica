@@ -1,0 +1,106 @@
+body{
+    height:100vh;
+    margin: 0;
+    --x: calc(var(--posX, 0) * 1px);
+    --y: calc(var(--posY, 0) * 1px);
+    background-image: 
+      linear-gradient(115deg, rgb(211 255 215), rgb(0 0 0)), 
+      radial-gradient( 90% 100% at calc( 50% + var(--x)) calc( 0% + var(--y)), rgb(200 200 200), rgb(022 000 045)), 
+      radial-gradient(100% 100% at calc( 80% - var(--x)) calc( 0% - var(--y)), rgb(250 255 000), rgb(036 000 000)), 
+      radial-gradient(150% 210% at calc(100% + var(--x)) calc( 0% + var(--y)), rgb(020 175 125), rgb(000 010 255)), 
+      radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(255 077 000), rgb(000 200 255)), 
+      linear-gradient(60deg, rgb(255 000 000), rgb(120 086 255));
+    background-blend-mode: overlay, overlay, difference, difference, difference, normal;
+  }
+
+h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size:60px;
+}
+
+h3{
+    font-family:'Courier New', Courier, monospace;
+    color:black;
+}
+
+.outlined-text{
+    color: white;
+    text-shadow:
+    -1.5px -1.5px 0 #100069,
+    1.5px -1.5px 0 #100069,
+    -1.5px 1.5px 0 #087b00,
+    1.5px 1.5px 0 #087b00;
+    font-size: 80px;
+}
+
+.outlined{
+    color: rgb(255, 255, 255);
+    text-shadow:
+    -1.5px -1.5px 0 #005d55,
+    1.5px -1.5px 0 #005d55,
+    -1.5px 1.5px 0 #bc720b,
+    1.5px 1.5px 0 #bc720b ;
+    font-size: 50px;
+}
+
+.derecha{
+    float: right;
+    color: #ffffff;
+    text-shadow: 4px 5px 0 #000;
+}
+
+.izquierda{
+    float: left;
+    color: #ffffff;
+    text-shadow: 4px 5px 0 #000; 
+}
+
+.texto{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.informacion{
+    text-align: center;
+    color: #ffffff;
+}
+.imagen1{
+    margin-left: 50px;
+    width: 470px;
+    height: 400px;
+}
+.imagen2{
+    margin-right: 50px;
+    width: 470px;
+    height: 400px;
+}
+.trad1{
+    margin-left: 50px;
+    width: 490px;
+    height: 320px;
+}
+.trad2{
+    margin-right: 50px;
+    width: 470px;
+    height: 320px;
+}
+.kodfun-galeri{
+    margin-right: 75px;
+    margin-top: 50px;
+    margin-left: 75px;
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+}
+.kodfun-galeri > div{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+.kodfun-galeri > div:hover{
+    flex: 5;
+}
